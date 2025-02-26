@@ -44,10 +44,12 @@ graph TD;
     A --> C[Notification Service]
     A --> D[Payment Service]
     A --> E[Auth Service]
+    A --> F[Order Service]
     B -->|Stores Data| DB1[(Product DB)]
     C -->|Stores Notifications| DB2[(Notification DB)]
     D -->|Processes Payments| DB3[(Payment DB)]
     E -->|Authenticates Users| DB4[(Auth DB)]
+    F -->|Record Orders| DB5[(Order DB)]
     B -->|Indexes Data| ES[(Elasticsearch - Search DB)]
     subgraph Messaging Queue
         Kafka[Kafka Queue]
@@ -62,6 +64,7 @@ graph TD;
     SD --> C
     SD --> D
     SD --> E
+    SD --> F
 ```
 
 ## Screenshot
