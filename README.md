@@ -12,14 +12,14 @@ This is a Personal Proof of Concept (POC) Project, developed to explore Spring B
 
 These are few microservices which are getting used in this project.
 
-| **Service Name**                | **Default Port** | **Dependency**                                         | **Description**                                                                                       |
-|---------------------------------|------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| [prodcuct]()                    | 8080             | serviceDiscovery, MySQL, Elasticsearch, Redis, Kafka   | Manages product catalog, including product details, pricing, and inventory along with cart.           |
-| [auth]()                        | 8080             | serviceDiscovery, MySQL, Kafka                         | Handles user authentication, registration, and authorization using JWT and OAuth2.                    |
-| [notification]()                | 8080             | serviceDiscovery, Kafka                                | Sends email notifications for sign-up, order confirmations, payment updates, etc.                     |
-| [gateway]()                     | 443,80:8080      | serviceDiscovery, auth                                 | Acts as an API Gateway (Spring Cloud Gateway) routing requests to appropriate microservices.          |
-| [serviceDiscovery]()            | 8761             | -                                                      | Eureka Server for service discovery, enabling dynamic registration and load balancing.                |
-| [payment]()                     | 8080             | serviceDiscovery, MySQL, Kafka                         | Handles payment processing, integrating with third-party payment gateways.                            |
+| **Service Name**                                                        | **Default Port** | **Dependency**                                         | **Description**                                                                                       |
+|-------------------------------------------------------------------------|------------------|--------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| [prodcuct](https://github.com/taraksuthar1999/productService)           | 8080             | serviceDiscovery, MySQL, Elasticsearch, Redis, Kafka   | Manages product catalog, including product details, pricing, and inventory along with cart.           |
+| [auth](https://github.com/taraksuthar1999/authservice)                  | 8080             | serviceDiscovery, MySQL, Kafka                         | Handles user authentication, registration, and authorization using JWT and OAuth2.                    |
+| [notification](https://github.com/taraksuthar1999/notificationservice)  | 8080             | serviceDiscovery, Kafka                                | Sends email notifications for sign-up, order confirmations, payment updates, etc.                     |
+| [gateway](https://github.com/taraksuthar1999/gateway)                   | 443,80:8080      | serviceDiscovery, auth                                 | Acts as an API Gateway (Spring Cloud Gateway) routing requests to appropriate microservices.          |
+| [serviceDiscovery](https://github.com/taraksuthar1999/servicediscovery) | 8761             | -                                                      | Eureka Server for service discovery, enabling dynamic registration and load balancing.                |
+| [payment](https://github.com/taraksuthar1999/paymentservice)            | 8080             | serviceDiscovery, MySQL, Kafka                         | Handles payment processing, integrating with third-party payment gateways.                            |
 
 For further information about the component you can click on the Service.
 
