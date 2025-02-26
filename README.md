@@ -38,6 +38,28 @@ These applications are using two kinds of databases, one is structured and other
 
 The architecture of the complete microservice interaction looks like this:-
 
+```mermaid
+graph TD;
+    A[Gateway] -->|Routes Requests| B[Product Service]
+    A --> C[Notification Service]
+    A --> D[Payment Service]
+    A --> E[Auth Service]
+    B -->|Stores Data| DB1[(Product DB)]
+    C -->|Sends Messages| Kafka[(Kafka)]
+    D -->|Processes Payments| DB2[(Payment DB)]
+    E -->|Authenticates Users| DB3[(Auth DB)]
+    subgraph Caching Layer
+        Cache[Redis Cache]
+    end
+    subgraph Service Discovery
+        SD[Eureka Service Discovery]
+    end
+    SD --> B
+    SD --> C
+    SD --> D
+    SD --> E
+
+
 <div align="center">
   <img src="" alt="image">
 </div>
