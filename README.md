@@ -45,9 +45,13 @@ graph TD;
     A --> D[Payment Service]
     A --> E[Auth Service]
     B -->|Stores Data| DB1[(Product DB)]
-    C -->|Sends Messages| Kafka[(Kafka)]
-    D -->|Processes Payments| DB2[(Payment DB)]
-    E -->|Authenticates Users| DB3[(Auth DB)]
+    C -->|Stores Notifications| DB2[(Notification DB)]
+    D -->|Processes Payments| DB3[(Payment DB)]
+    E -->|Authenticates Users| DB4[(Auth DB)]
+    B -->|Indexes Data| ES[(Elasticsearch - Search DB)]
+    subgraph Messaging Queue
+        Kafka[Kafka Queue]
+    end
     subgraph Caching Layer
         Cache[Redis Cache]
     end
@@ -59,10 +63,6 @@ graph TD;
     SD --> D
     SD --> E
 ```
-
-<div align="center">
-  <img src="" alt="image">
-</div>
 
 ## Screenshot
 
