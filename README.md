@@ -1,12 +1,12 @@
 Microservices Shopping Application - Personal POC Project
 This is a Personal Proof of Concept (POC) Project, developed to explore Spring Boot and gain a deeper understanding of microservices architecture. The application simulates a shopping platform backend, covering essential microservices concepts such as:
 
-Service Discovery (Spring Netflix Eureka)
-API Gateway (Spring Cloud Gateway)
-Load Balancing (AWS ALB)
-Containerization (Docker, Kubernetes)
-Persistence (Elasticsearch, relational databases)
-The primary goal of this project is to experiment with Spring Boot features, understand distributed system behavior, and learn how different microservices interact in a cloud environment.
+- **Service Discovery**: Spring Netflix Eureka  
+- **API Gateway**: Spring Cloud Gateway  
+- **Load Balancing**: AWS Application Load Balancer (ALB)  
+- **Containerization**: Docker, Kubernetes  
+- **Persistence**: Elasticsearch, relational databases 
+- The primary goal of this project is to experiment with Spring Boot features, understand distributed system behavior, and learn how different microservices interact in a cloud environment.
 
 ## Applications
 
