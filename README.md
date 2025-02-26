@@ -1,5 +1,5 @@
-Microservices Shopping Application - Personal POC Project
-This is a Personal Proof of Concept (POC) Project, developed to explore Spring Boot and gain a deeper understanding of microservices architecture. The application simulates a shopping platform backend, covering essential microservices concepts such as:
+## Shopping Microservices
+- **Personal POC Project**: This is a Personal Proof of Concept (POC) Project, developed to explore Spring Boot and gain a deeper understanding of microservices architecture. The application simulates a shopping platform backend, covering essential microservices concepts such as:
 
 - **Service Discovery**: Spring Netflix Eureka  
 - **API Gateway**: Spring Cloud Gateway  
